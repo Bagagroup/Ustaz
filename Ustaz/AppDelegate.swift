@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let layOut = UICollectionViewFlowLayout()
+        let collectionViewController = UstazCollectionController(collectionViewLayout: layOut)
+        window = UIWindow(frame: UIScreen.main.bounds)      // ЖАНС мы обычно здесь писали mainScreen() помнишь?
+        window?.makeKeyAndVisible()
+        
+        window?.rootViewController = UINavigationController(rootViewController: collectionViewController)
+        
+        
         return true
     }
 

@@ -12,9 +12,11 @@
 		6C490C4E1E37D7C7004049D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C490C4C1E37D7C7004049D2 /* Main.storyboard */; };
 		6C490C501E37D7C7004049D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C490C4F1E37D7C7004049D2 /* Assets.xcassets */; };
 		6C490C531E37D7C7004049D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C490C511E37D7C7004049D2 /* LaunchScreen.storyboard */; };
+		944577A72C1B2A49F75263F9 /* Pods_Ustaz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D017A377B1A2D774558A6E48 /* Pods_Ustaz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BBA286FD14BDB9EEE891148 /* Pods-Ustaz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ustaz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ustaz/Pods-Ustaz.release.xcconfig"; sourceTree = "<group>"; };
 		6C490C451E37D7C7004049D2 /* Ustaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ustaz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C490C481E37D7C7004049D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C490C4A1E37D7C7004049D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		6C490C4F1E37D7C7004049D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C490C521E37D7C7004049D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C490C541E37D7C7004049D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957632924D0642BFF7E95372 /* Pods-Ustaz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ustaz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ustaz/Pods-Ustaz.debug.xcconfig"; sourceTree = "<group>"; };
+		D017A377B1A2D774558A6E48 /* Pods_Ustaz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ustaz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944577A72C1B2A49F75263F9 /* Pods_Ustaz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				6C490C471E37D7C7004049D2 /* Ustaz */,
 				6C490C461E37D7C7004049D2 /* Products */,
+				B1ADF735F541301928E296D9 /* Pods */,
+				8E558D8E0A61A5FF671AAE4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Ustaz;
 			sourceTree = "<group>";
 		};
+		8E558D8E0A61A5FF671AAE4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D017A377B1A2D774558A6E48 /* Pods_Ustaz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1ADF735F541301928E296D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				957632924D0642BFF7E95372 /* Pods-Ustaz.debug.xcconfig */,
+				4BBA286FD14BDB9EEE891148 /* Pods-Ustaz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C490C571E37D7C7004049D2 /* Build configuration list for PBXNativeTarget "Ustaz" */;
 			buildPhases = (
+				AEA1E738D71F17377FC2700D /* [CP] Check Pods Manifest.lock */,
 				6C490C411E37D7C7004049D2 /* Sources */,
 				6C490C421E37D7C7004049D2 /* Frameworks */,
 				6C490C431E37D7C7004049D2 /* Resources */,
+				6A5F0DD891B1EADB4814BD94 /* [CP] Embed Pods Frameworks */,
+				9E2E471953309B673B1C52D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A5F0DD891B1EADB4814BD94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ustaz/Pods-Ustaz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E2E471953309B673B1C52D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ustaz/Pods-Ustaz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEA1E738D71F17377FC2700D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C490C411E37D7C7004049D2 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		6C490C581E37D7C7004049D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957632924D0642BFF7E95372 /* Pods-Ustaz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 48A2Q56Y2C;
@@ -267,11 +343,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bagagroup.Ustaz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		6C490C591E37D7C7004049D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BBA286FD14BDB9EEE891148 /* Pods-Ustaz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 48A2Q56Y2C;
@@ -280,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bagagroup.Ustaz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
